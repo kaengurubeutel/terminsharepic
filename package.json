@@ -1,6 +1,7 @@
 {
   "name": "sharepicgenerator",
   "version": "0.1.0",
+  "homepage": "https://kaengurubeutel.github.io/terminsharepic",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -9,7 +10,6 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^3.2.3",
     "material-ui-image": "^3.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,9 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "react-scripts build && cp build/index.html build/404.html",
-    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
