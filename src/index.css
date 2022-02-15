@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'titilliumregular';
+  src: url('titillium_allfont.net-webfont.woff2') format('woff2'),
+  url('titillium_allfont.net-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'good_brushregular';
+  src: url('good_brush-webfont.woff2') format('woff2'),
+  url('good_brush-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
