@@ -48,16 +48,6 @@ function App(){
             settermin6(e.target.value);
         }
 
-    const handlereset = e => {
-
-            settermin1("");
-            settermin2("");
-            settermin3("");
-            settermin4("");
-            settermin5("");
-            settermin6("");
-            setzeitraum("");
-    }
         return (
             <div className="App">
 
@@ -99,38 +89,37 @@ function App(){
                             <Stack spacing={2}>
                                 <TextField id = "zeitraum" label = "Zeitraum" variant = "standard" onChange={handlezeitraum}></TextField>
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin1" label = "Tag, Datum" variant = "standard" onChange={handletermin1}></TextField>
+                                    <TextField id = "termin1" label = "Tag, Datum, Veranstaltung"  variant = "standard" onChange={handletermin1}></TextField>
 
                                 </Stack>
 
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin2" label = "Tag, Datum" variant = "standard" onChange={handletermin2}></TextField>
+                                    <TextField id = "termin2" label = "Tag, Datum, Veranstaltung"  variant = "standard" onChange={handletermin2}></TextField>
 
                                 </Stack>
 
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin3" label = "Tag, Datum" variant = "standard" onChange={handletermin3}></TextField>
+                                    <TextField id = "termin3" label = "Tag, Datum, Veranstaltung" variant = "standard" onChange={handletermin3}></TextField>
 
                                 </Stack>
 
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin4" label = "Tag, Datum" variant = "standard" onChange={handletermin4}></TextField>
+                                    <TextField id = "termin4" label = "Tag, Datum, Veranstaltung"  variant = "standard" onChange={handletermin4}></TextField>
 
                                 </Stack>
 
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin5" label = "Tag, Datum" variant = "standard" onChange={handletermin5}></TextField>
+                                    <TextField id = "termin5" label = "Tag, Datum, Veranstaltung"  variant = "standard" onChange={handletermin5}></TextField>
 
                                 </Stack>
 
                                 <Stack direction="row" spacing={2}>
-                                    <TextField id = "termin6" label = "Tag, Datum" variant = "standard" onChange={handletermin6}></TextField>
+                                    <TextField id = "termin6" label = "Tag, Datum, Veranstaltung "  variant = "standard" onChange={handletermin6}></TextField>
 
                                 </Stack>
-
-                                <Stack direction="row" spacing={2}>
-                                    <Button id = "reset" variant = "outlined" onClick={handlereset}>reset</Button>
-                                </Stack>
+                                <Typography>
+                                    (max 29 buchstaben)
+                                </Typography>
 
                             </Stack>
                         </div>
@@ -159,7 +148,7 @@ function App(){
                                     sx={{
                                         transform: "matrix(1, -0.11, 0.09, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={1}
                                     fontFamily="Good Brush"
                                     fontSize={50}
@@ -170,13 +159,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -25,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.09, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily="Good Brush"
                                     fontSize={30}
+                                    textAlign={"left"}
                                     color={"#78D348"} >
                                     {zeitraum != "" ? zeitraum : "\n" }
                                 </Typography>
@@ -184,12 +175,14 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={16}
                                     color={"#FFF"} >
@@ -198,13 +191,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
                                     fontWeight={"normal"}
+                                    textAlign={"left"}
                                     fontSize={16}
                                     color={"#FFF"} >
                                     {termin2 != "" ? termin2 + "\n" : <br/>}
@@ -212,13 +207,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
                                     fontWeight={"normal"}
+                                    textAlign={"left"}
                                     fontSize={16}
                                     color={"#FFF"} >
                                     {termin3 != "" ? termin3 + "\n" : <br/>}
@@ -226,13 +223,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
                                     fontWeight={"normal"}
+                                    textAlign={"left"}
                                     fontSize={16}
                                     color={"#FFF"} >
                                     {termin4 != "" ? termin4 + "\n" : <br/>}
@@ -240,13 +239,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
                                     fontWeight={"normal"}
+                                    textAlign={"left"}
                                     fontSize={16}
                                     color={"#FFF"} >
                                     {termin5 != "" ? termin5 + "\n" : <br/>}
@@ -254,13 +255,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -20,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                     }}
-                                    marginLeft={3}
+                                    marginLeft={4}
                                     marginTop ={0}
                                     fontFamily= "Titillium"
                                     fontWeight={"normal"}
+                                    textAlign={"left"}
                                     fontSize={16}
                                     color={"#FFF"} >
                                     {termin6 != "" ? termin6 + "\n" : <br/>}
@@ -304,7 +307,7 @@ function App(){
                                         transform: "matrix(1, -0.11, 0.09, 0.99, 0, 0)",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={8}
+                                    marginTop ={5}
                                     fontFamily="Good Brush"
                                     fontSize={60}
                                     color={"#FFF"} >
@@ -314,13 +317,15 @@ function App(){
                                 <Typography
                                     sx={{
                                         position: "relative",
-                                        top: -15,
+                                        top: -25,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.09, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
                                     marginTop ={0}
                                     fontFamily="Good Brush"
+                                    textAlign={"left"}
                                     fontSize={40}
                                     color={"#78D348"} >
                                     {zeitraum != "" ? zeitraum : "\n" }
@@ -330,12 +335,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 290,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={5}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -346,12 +353,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={0}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -362,12 +371,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={0}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -378,12 +389,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={0}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -394,12 +407,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={0}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -410,12 +425,14 @@ function App(){
                                     sx={{
                                         position: "relative",
                                         top: -15,
+                                        width: 250,
                                         transform: "matrix(1, -0.11, 0.01, 0.99, 0, 0)",
                                         textAlign: "left",
                                     }}
                                     marginLeft={3}
-                                    marginTop ={0}
+                                    marginTop ={2}
                                     fontFamily= "Titillium"
+                                    textAlign={"left"}
                                     fontWeight={"normal"}
                                     fontSize={19}
                                     color={"#FFF"} >
@@ -425,7 +442,7 @@ function App(){
                                 <Container
                                     sx={{
                                         position: "relative",
-                                        top: -10,
+                                        top: -40,
                                         left: 150,
                                         textAlign: "left",
                                     }}

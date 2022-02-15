@@ -2,7 +2,6 @@
   "name": "sharepicgenerator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/kaengurubeutel/sharepicgenerator.git",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -18,8 +17,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build && cp build/index.html build/404.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
