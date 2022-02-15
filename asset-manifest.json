@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/terminsharepic/static/css/main.964fdded.css",
+    "main.js": "/terminsharepic/static/js/main.6f1e78df.js",
+    "static/media/weiss_weiss.png": "/terminsharepic/static/media/weiss_weiss.74e387666f65061ebe70.png",
+    "index.html": "/terminsharepic/index.html",
+    "main.964fdded.css.map": "/terminsharepic/static/css/main.964fdded.css.map",
+    "main.6f1e78df.js.map": "/terminsharepic/static/js/main.6f1e78df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.6f1e78df.js"
+  ]
+}
