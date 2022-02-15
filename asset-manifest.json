@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/terminsharepic/static/css/main.616727cf.css",
+    "main.css": "/terminsharepic/static/css/main.1cb0d43b.css",
     "main.js": "/terminsharepic/static/js/main.6f1e78df.js",
     "static/media/good_brush-webfont.woff": "/terminsharepic/static/media/good_brush-webfont.fe8d5bf9cede77d170c7.woff",
     "static/media/good_brush-webfont.woff2": "/terminsharepic/static/media/good_brush-webfont.7362ba15c0eece4b08c3.woff2",
@@ -8,11 +8,11 @@
     "static/media/weiss_weiss.png": "/terminsharepic/static/media/weiss_weiss.74e387666f65061ebe70.png",
     "static/media/titillium_allfont.net-webfont.woff2": "/terminsharepic/static/media/titillium_allfont.net-webfont.447f4d4509354b85ee85.woff2",
     "index.html": "/terminsharepic/index.html",
-    "main.616727cf.css.map": "/terminsharepic/static/css/main.616727cf.css.map",
+    "main.1cb0d43b.css.map": "/terminsharepic/static/css/main.1cb0d43b.css.map",
     "main.6f1e78df.js.map": "/terminsharepic/static/js/main.6f1e78df.js.map"
   },
   "entrypoints": [
-    "static/css/main.616727cf.css",
+    "static/css/main.1cb0d43b.css",
     "static/js/main.6f1e78df.js"
   ]
 }
